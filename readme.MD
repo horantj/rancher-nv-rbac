@@ -33,7 +33,7 @@ For item 2:
 Currently the proxy link only is displayed for rancher admin users. So an admin will need to provide the link to other users. Once a user is logged into rancher, they can then access this link directly via bookmark or other method. _This will need a FR in rancher to display for other users_
 
 ## Example script to create project and cluster roles via API
-See [add roles script](bin/add.sh)
+See [add roles script](add.sh)
 
 [^1]: ![Project Admin](images/project_admin_role.png)
   ![Project Read-Only](images/project_readonly_role.png)
