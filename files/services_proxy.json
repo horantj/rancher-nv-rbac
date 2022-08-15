@@ -1,0 +1,30 @@
+{
+"administrative": false,
+"clusterCreatorDefault": false,
+"context": "project",
+"external": false,
+"hidden": false,
+"locked": false,
+"name": "Neuvector UI Proxy",
+"projectCreatorDefault": false,
+"roleTemplateIds": [ ],
+"rules": [
+{
+"apiGroups": [
+""
+],
+"resources": [
+"services/proxy"
+],
+"verbs": [ 
+"create",
+"get",
+"list",
+"update",
+"watch",
+"patch",
+"delete"
+]
+}
+]
+}
