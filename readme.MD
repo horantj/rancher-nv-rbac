@@ -23,8 +23,8 @@ Item 1 is highly dependent on your RBAC setup, but can be done with distinct Neu
 
 For item 2:
 1. Create a project for Neuvector prior to installing from the App catalog, and install to this project. If install has already been done, create the project and move the namespace there. (need to update https://rancher.com/docs/rancher/v2.6/en/neuvector-integration/).
-2. Create a project level role per rancher documentation with service/proxy access[^2]. 
-3. Add the created project role to the created Neuvector project for any non global user/group that will be authenticating in this manner.
+2. Create a project level role per rancher documentation with service/proxy access. 
+3. Add the created project role to the created Neuvector project for any non global user/group that will be authenticating in this manner[^2].
    
 > **Warning**
 > Please be sure to scope this role to a Neuvector only project, otherwise potential undesired service access could be given.
