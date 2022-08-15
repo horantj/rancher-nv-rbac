@@ -2,11 +2,11 @@
 
 # create API key set here or export
 # https://rancher.com/docs/rancher/v2.6/en/user-settings/api-keys/
-CATTLE_ACCESS_KEY=token-7l5xt
-CATTLE_SECRET_KEY=hc2ztk97glsrclhc96vvd4q644w9wdvb6wpd6mk2v6vxxldf98bqk2
+#CATTLE_ACCESS_KEY=
+#CATTLE_SECRET_KEY=
 
 # address for rancher server, including https, no trailing /
-RANCHER_SERVER=https://rancher.3.236.100.199.sslip.io
+#RANCHER_SERVER=
 
 # list of json files to import, separated by space
 jsons=$(find files -type f -name "*.json")
