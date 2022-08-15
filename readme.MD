@@ -37,6 +37,7 @@ See [add roles script](add.sh)
 
 [^1]: ![Project Admin](images/project_admin_role.png)
   ![Project Read-Only](images/project_readonly_role.png)
+  ![Project UI Proxy](images/project_proxy_role.png)
   ![Cluster Admin](images/cluster_admin_role.png)
   ![Cluster Read-Only](images/cluster_readonly_role.png)
   
