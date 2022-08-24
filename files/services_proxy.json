@@ -18,12 +18,7 @@
 ],
 "verbs": [ 
 "create",
-"get",
-"list",
-"update",
-"watch",
-"patch",
-"delete"
+"get"
 ]
 }
 ]

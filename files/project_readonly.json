@@ -19,6 +19,17 @@
 "verbs": [
 "get"
 ]
+},
+{
+"apiGroups": [
+"neuvector.com"
+],
+"resources": [
+"*"
+],
+"verbs": [
+"get"
+]
 }
 ]
 }
