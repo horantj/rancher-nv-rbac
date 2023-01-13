@@ -2,7 +2,7 @@
 ## _DRAFT_
 
 ### Pre-Reqs:
-NeuVector installed into cattle-neuvector-system namespace on a downstream cluster with rancher SSO enabled. If using the app catalog, this will work out of the box.
+• NeuVector installed into cattle-neuvector-system namespace on a downstream cluster with rancher SSO enabled. If using the app catalog, this will work out of the box.
 
 The following table lists the Neuvector role and the k8s rbac from which it is derived. These rbac roles need to be created within rancher RBAC.
 
@@ -15,7 +15,7 @@ namespace reader|read-only.neuvector.api.io|*|get| clusterrole/role with rolebin
 n/a|neuvector.com|*|get|necessary along with any of the above for nav link to appear|
 
 ### Creating the rancher RBAC roles for cluster and project scope
-_for users that are not global admins or cluster admins_
+_for users that are not already global admins or cluster admins in Neuvector_
 
 Two items are necessary for the mapped access:
 1. Cluster, or project level role with the above rbac objects.
