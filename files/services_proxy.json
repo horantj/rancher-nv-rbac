@@ -16,9 +16,13 @@
 "resources": [
 "services/proxy"
 ],
+"resourceNames": [
+"neuvector-service-webui"
+],
 "verbs": [ 
 "create",
-"get"
+"get".
+"patch"
 ]
 }
 ]
