@@ -2,7 +2,7 @@
 ## _DRAFT_
 
 ### Pre-Reqs:
-NeuVector installed into cattle-neuvector-system namespace on a downstream cluster with rancher SSO enabled. If using the app catalog, this will work out of the box.
+NeuVector installed into 'cattle-neuvector-system' namespace on a downstream cluster with rancher SSO enabled. If using the app catalog, this will work out of the box.
 
 The following table lists the Neuvector role and the k8s rbac from which it is derived. These rbac roles need to be created within rancher RBAC.
 
@@ -21,11 +21,16 @@ Two items are necessary for the mapped access:
 1. Cluster, or project level role with the above rbac objects.
 2. Project level services/proxy permission for users that do not have this in another role (for UI proxy via rancher).
 
-Item 1 is highly dependent on your RBAC setup, but can be done with distinct Neuvector roles, or adding the permissions from the above tables to an existing set of custom roles. These can be given to users at Global, cluster, or project level. See [Images](./images) for example.
+Item 1 is highly dependent on your RBAC setup, but can be done with distinct Neuvector roles, or adding the permissions from the above tables to an existing set of custom roles. These can be given to users at Global, cluster, or project level. See [Images](./images) for examples.
 
 For item 2:
 1. Create a project for NeuVector prior to installing from the App catalog, and install to this project. If install has already been done, create the project and move the cattle-neuvector-system namespace there.
-2. Create a project level role per rancher documentation with services/proxy access. 
+2. Create a project level role per rancher documentation with services/proxy access.
+
+|Neuvector role|apiGroup |resources|verbs|comment|
+|-----|-----|-----|-----|-----|
+UI Proxy|""|services/proxy|get,list,patch| project role, assign to NV users/groups on NeuVector project|
+
 3. Add the created project role to the created Neuvector project for any non global user/group that will be authenticating in this manner.  See [Images](./images/project_ui_role.png) for example.
    
 > **Warning**
