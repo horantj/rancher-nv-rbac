@@ -21,12 +21,12 @@ Two items are necessary for the mapped access:
 1. Cluster, or project level role with the above rbac objects.
 2. Project level services/proxy permission for users that do not have this in another role (for UI proxy via rancher).
 
-Item 1 is highly dependent on your RBAC setup, but can be done with distinct Neuvector roles, or adding the permissions from the above tables to an existing set of custom roles. These can be given to users at Global, cluster, or project level. See[^1]. for example roles.
+Item 1 is highly dependent on your RBAC setup, but can be done with distinct Neuvector roles, or adding the permissions from the above tables to an existing set of custom roles. These can be given to users at Global, cluster, or project level. See [Images](./images) for example.
 
 For item 2:
 1. Create a project for NeuVector prior to installing from the App catalog, and install to this project. If install has already been done, create the project and move the cattle-neuvector-system namespace there.
 2. Create a project level role per rancher documentation with services/proxy access. 
-3. Add the created project role to the created Neuvector project for any non global user/group that will be authenticating in this manner[^2].
+3. Add the created project role to the created Neuvector project for any non global user/group that will be authenticating in this manner.  See [Images](./images/project_ui_role.png) for example.
    
 > **Warning**
 > Please be sure to scope this role to a Neuvector only project, otherwise potential undesired service access could be given. If using the API role add method, the role contains an extra restriction to ONLY the NeuVector UI service, which is not possible to add via rancher UI as of this writing.
@@ -34,10 +34,10 @@ For item 2:
 ## Example script to create project and cluster roles via API
 See [add roles script](add.sh)
 
-[^1]: ![Project Admin](./images/project_admin_role.png)
-  ![Project Read-Only](./images/project_readonly_role.png)
-  ![Project UI Proxy](./images/project_proxy_role.png)
-  ![Cluster Admin](./images/cluster_admin_role.png)
-  ![Cluster Read-Only](./images/cluster_readonly_role.png)
+[^1]: ![Project Admin](./images/project_admin_role.png) <br>
+  ![Project Read-Only](./images/project_readonly_role.png) <br>
+  ![Project UI Proxy](./images/project_proxy_role.png) <br>
+  ![Cluster Admin](./images/cluster_admin_role.png)<br>
+  ![Cluster Read-Only](./images/cluster_readonly_role.png)<br>
   
 [^2]: ![Neuvector Project UI](./images/project_ui_role.png)
