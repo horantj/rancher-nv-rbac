@@ -29,7 +29,7 @@ For item 2:
 
 |Neuvector role|apiGroup |resources|verbs|comment|
 |-----|-----|-----|-----|-----|
-UI Proxy|""|services/proxy|get,list,patch| project role, assign to NV users/groups on NeuVector project|
+UI Proxy|""|services/proxy|get,create,patch| project role, assign to NV users/groups on NeuVector project|
 
 3. Add the created project role to the created Neuvector project for any non global user/group that will be authenticating in this manner.  See [Images](./images/project_ui_role.png) for example.
    
