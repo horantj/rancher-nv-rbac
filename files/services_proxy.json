@@ -1,29 +1,29 @@
 {
-"administrative": false,
-"clusterCreatorDefault": false,
-"context": "project",
-"external": false,
-"hidden": false,
-"locked": false,
-"name": "Neuvector UI Proxy",
-"projectCreatorDefault": false,
-"roleTemplateIds": [ ],
-"rules": [
-{
-"apiGroups": [
-""
-],
-"resources": [
-"services/proxy"
-],
-"resourceNames": [
-"neuvector-service-webui"
-],
-"verbs": [ 
-"create",
-"get".
-"patch"
-]
-}
-]
+    "administrative": false,
+    "clusterCreatorDefault": false,
+    "context": "project",
+    "external": false,
+    "hidden": false,
+    "locked": false,
+    "name": "Neuvector UI Proxy",
+    "projectCreatorDefault": false,
+    "roleTemplateIds": [],
+    "rules": [
+        {
+            "apiGroups": [
+                ""
+            ],
+            "resources": [
+                "services/proxy"
+            ],
+            "resourceNames": [
+                "https:neuvector-service-webui:8443"
+            ],
+            "verbs": [
+                "create",
+                "get",
+                "patch"
+            ]
+        }
+    ]
 }

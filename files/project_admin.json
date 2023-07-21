@@ -1,35 +1,35 @@
 {
-"administrative": false,
-"clusterCreatorDefault": false,
-"context": "project",
-"external": false,
-"hidden": false,
-"locked": false,
-"name": "Neuvector Project Admin",
-"projectCreatorDefault": false,
-"roleTemplateIds": [ ],
-"rules": [
-{
-"apiGroups": [
-"read-only.neuvector.api.io"
-],
-"resources": [
-"get"
-],
-"verbs": [
-"get"
-]
-},
-{
-"apiGroups": [
-"neuvector.com"
-],
-"resources": [
-"*"
-],
-"verbs": [
-"get"
-]
-}
-]
+    "administrative": false,
+    "clusterCreatorDefault": false,
+    "context": "project",
+    "external": false,
+    "hidden": false,
+    "locked": false,
+    "name": "Neuvector Project Admin",
+    "projectCreatorDefault": false,
+    "roleTemplateIds": [],
+    "rules": [
+        {
+            "apiGroups": [
+                "read-only.neuvector.api.io"
+            ],
+            "resources": [
+                "*"
+            ],
+            "verbs": [
+                "*"
+            ]
+        },
+        {
+            "apiGroups": [
+                "neuvector.com"
+            ],
+            "resources": [
+                "*"
+            ],
+            "verbs": [
+                "get"
+            ]
+        }
+    ]
 }
